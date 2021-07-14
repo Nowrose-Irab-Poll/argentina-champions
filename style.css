@@ -186,6 +186,17 @@ a:visited {
   text-align: justify;
 }
 
+.highlights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlights iframe {
+  height: 315px;
+  width: 560px;
+}
+
 /*  ------------------------------
             Footer
     ------------------------------*/
@@ -214,4 +225,124 @@ footer {
   font-size: 32px;
   color: #969bab;
   margin: 7px;
+}
+
+/*  ------------------------------
+            Media Queries
+    ------------------------------*/
+
+/* Mobile devices */
+@media only screen and (max-width: 688px) {
+  .container,
+  .top-banner,
+  .main,
+  .highlights-section {
+    width: 100%;
+  }
+
+  .main {
+    margin: 0px 0px 0px 0px;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .top-banner img {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    width: 60%;
+    height: auto;
+  }
+
+  .squad,
+  .highlights-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 10px 10px 10px;
+  }
+
+  .top-banner,
+  .kit-section {
+    padding: 10px 10px 10px 10px;
+    flex-direction: column;
+  }
+
+  .kit a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .highlights iframe {
+    height: 225px;
+    width: 350px;
+  }
+}
+
+/* tablet devices */
+
+@media only screen and (min-width: 689px) and (max-width: 1024px) {
+  .container,
+  .top-banner,
+  .main,
+  .highlights-section {
+    width: 100%;
+  }
+
+  .main {
+    margin: 0px 0px 0px 0px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .top-banner img {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    width: 80%;
+    height: auto;
+  }
+
+  .squad {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 10px 10px 10px;
+  }
+
+  .highlights-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 10px 10px 10px;
+  }
+  .top-banner,
+  .kit-section {
+    padding: 10px 10px 10px 10px;
+    flex-direction: column;
+  }
+
+  .kit a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .highlights iframe {
+    height: 315px;
+    width: 560px;
+  }
 }
