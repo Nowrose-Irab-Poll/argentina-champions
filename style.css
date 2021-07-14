@@ -149,6 +149,12 @@ a:visited {
   padding: 10px;
 }
 
+.kit a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .kit h2 {
   text-transform: capitalize;
   text-align: center;
