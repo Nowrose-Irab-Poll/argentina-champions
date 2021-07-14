@@ -1,0 +1,141 @@
+/*  ------------------------------
+                fonts
+    ------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+/*  ------------------------------
+    common styles and utilities
+    ------------------------------*/
+
+:root {
+  --primary-color: #033c67;
+  --secondary-color: #5cd4ef;
+  --complementary-color: #db7b25;
+  --background-color: white;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+a {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.container {
+  margin: 70px 210px 95px 180px;
+}
+
+.button {
+  background-color: var(--complementary-color);
+  color: var(--background-color);
+  padding: 10px 24px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button a {
+  color: var(--background-color);
+  margin-right: 8px;
+}
+
+/*  ------------------------------
+            top banner
+    ------------------------------*/
+
+.top-banner {
+  background-color: var(--primary-color);
+  display: flex;
+  color: var(--background-color);
+  padding: 50px 140px 86px 156px;
+  justify-content: center;
+}
+
+.argentina {
+  color: var(--secondary-color);
+}
+
+.top-banner img {
+  width: 556px;
+  height: 438px;
+}
+
+/*  ------------------------------
+            Squad
+    ------------------------------*/
+
+.squad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player img {
+  width: 300px;
+  height: 256px;
+}
+
+.player-info {
+  width: 100%;
+}
+
+.player-name {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.player-detail {
+  margin-top: 0;
+  margin-bottom: 19px;
+  color: #6c6c6c;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/*  ------------------------------
+            Footer
+    ------------------------------*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-logo {
+  width: 262px;
+  height: auto;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 13px;
+}
+
+.fab {
+  font-size: 32px;
+  color: #969bab;
+  margin: 7px;
+}
