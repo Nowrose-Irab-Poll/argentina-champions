@@ -50,11 +50,16 @@ a:visited {
   display: inline-block;
   font-size: 16px;
   line-height: 24px;
+  transition: width 0.5s, height 0.5s, border-radius 0.5s;
 }
 
 .button a {
   color: var(--background-color);
   margin-right: 8px;
+}
+
+.button:hover {
+  border-radius: 25%;
 }
 
 /*  ------------------------------
@@ -76,6 +81,11 @@ a:visited {
 .top-banner img {
   width: 556px;
   height: 438px;
+  transition: width 1s, height 1s, transform 1s;
+}
+
+.top-banner:hover img {
+  transform: scale(1.2);
 }
 
 /*  ------------------------------
@@ -139,18 +149,19 @@ a:visited {
   padding: 10px;
 }
 
-.kit img {
-  height: 300px;
-  width: auto;
-}
-
 .kit h2 {
   text-transform: capitalize;
   text-align: center;
 }
 
+.kit img {
+  height: 300px;
+  width: auto;
+  transition: width 1s, height 1s, transform 0.2s;
+}
+
 .kit:hover img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /*  ------------------------------
