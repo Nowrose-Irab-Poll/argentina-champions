@@ -17,6 +17,7 @@
 
 body {
   font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -139,7 +140,6 @@ a:visited {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   background-color: aliceblue;
 
-  /* background-image: url("images/argentina-flag.jpg"); */
   padding: 40px 210px 35px 180px;
 }
 
@@ -162,6 +162,28 @@ a:visited {
 
 .kit:hover img {
   transform: scale(1.2);
+}
+
+/*  ------------------------------
+            Highlights
+    ------------------------------*/
+
+.highlights-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+  background-color: var(--primary-color);
+  padding: 50px 140px 86px 156px;
+  color: var(--background-color);
+}
+
+.highlights-detials {
+  padding: 1.5em;
+}
+.highlights-detials p {
+  padding-top: 1.2em;
+  text-align: justify;
 }
 
 /*  ------------------------------
